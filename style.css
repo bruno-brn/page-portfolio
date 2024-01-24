@@ -15,6 +15,28 @@ body{
     margin: 0 auto;
 }
 
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight:  600;
+    background-color: rgb(37, 37, 228);
+    border:  0;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    transition: .2s;
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px rgb(37, 37, 228) ;
+    transform: scale(1.20);
+}
+
 header{
     padding: 40px 4%;
 }
@@ -36,6 +58,7 @@ header a{
 header a:hover{
     color: rgb(255, 255, 255);
     transform: scale(1.20);
+    cursor: pointer;
 }
 
 header nav ul{
@@ -47,19 +70,107 @@ header nav ul li{
     padding: 0 40px;
 }
 
-header .btn-contato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight:  600;
-    background-color: rgb(37, 37, 228);
-    border:  0;
-    border-radius: 30px;
-    color: white;
-    cursor: pointer;
-    text-align: center;
+section.topo-do-site{
+    padding: 40px 4%;
 }
 
-header .btn-contato button:hover{
-    box-shadow: 0px 0px 8px rgb(37, 37, 228) ;
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
 
+.topo-do-site h1{
+    width: 100%;
+    height: auto;
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span{
+    color: rgb(21, 255, 0);
+    font-size: 75px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: white;
+    margin: 40px 0;
+}
+
+.flip-horizontal-right:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-horizontal-right .flip-card-back{
+    transform: rotateY(180deg);
+}
+
+.flip-horizontal-left:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+}
+
+.flip-horizontal-left .flip-card-back {
+    transform: rotateY(-180deg);
+}
+
+.flip-vertical-up:hover .flip-card-inner {
+    transform: rotateX(180deg);
+}
+
+.flip-vertical-up .flip-card-back {
+    transform: rotateX(180deg);
+}
+
+.flip-vertical-down:hover .flip-card-inner {
+    transform: rotateX(-180deg);
+}
+
+.flip-vertical-down .flip-card-back {
+    transform: rotateX(-180deg);
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 500px;
+    perspective: 1000px; 
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front, 
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front img,
+.flip-card-back img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: contain;
+}
+
+.container {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px
+    }
 }
