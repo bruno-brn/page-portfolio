@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>portifolio BRN</title>
 </head>
@@ -23,11 +23,18 @@
                     <li><a href="#">Início</a></li>
                     <li><a href="#">Especialidades</a></li>
                     <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li class="dropdown">
+                        <a href="#">Projetos</a>
+                        <div class="dropdown-content">
+                            <a href="#">Backend</a>
+                            <a href="#">Frontend</a>
+                            <a href="#">Fullstack</a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <div class="btn-contato">
-                <a href="">
+                <a href="https://wa.me/55859181906768">
                     <button>Contato</button>
                 </a>
             </div>
@@ -43,7 +50,7 @@
                         <p>A programação é uma linguagem universal que capacita a interação entre humanos e computadores, permitindo a criação de softwares e aplicativos que impulsionam a era digital. Essencialmente, é o processo de escrever instruções que um computador pode entender e executar. A linguagem de programação serve como meio de comunicação entre o desenvolvedor e a máquina, possibilitando a criação de algoritmos e lógicas que resolvem problemas complexos.</p>
 
                         <div class="btn-contato">
-                            <a href="">
+                            <a href="https://wa.me/55859181906768">
                                 <button>Entre em contato</button>
                             </a>
                         </div>
@@ -66,27 +73,80 @@
         </section>
         <section class="especialidades">
             <div class="interface">
-                <h2>MINHAS <span>ESPECIALIDADES</span></h2>
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
                 <div class="flex">
                     <div class="especialidades-box">
-                        <i class="devicon-devicon-plain "></i>
+                        <i class="bi bi-code-square"></i>
                         <h3>Website</h3>
-                        <p>texto 1</p>
+                        <p>O desenvolvimento de websites Front-end refere-se à criação da interface do usuário e à experiência do usuário de um site. Os desenvolvedores front-end são responsáveis por traduzir o design e a visão do usuário em código, tornando o site funcional, responsivo e visualmente atraente. Aqui estão alguns conceitos-chave e tecnologias comuns associadas ao desenvolvimento Front-end:
+                        </p>
                     </div>
                     <div class="especialidades-box">
-                        <i class="devicon-devicon-plain "></i>
+                        <i class="bi bi-lightning-charge"></i>
                         <h3>Api</h3>
-                        <p>texto 2</p>
+                        <p>APIs desempenham um papel crucial na conectividade e na interoperabilidade de sistemas, contribuindo para a eficiência e inovação no desenvolvimento de software.
+                        </p>
                     </div>
                     <div class="especialidades-box">
-                        <i class="devicon-devicon-plain "></i>
+                        <i class="bi bi-terminal"></i>
                         <h3>Node</h3>
-                        <p>texto 3</p>
+                        <p>Node é  uma tecnologia de execução JavaScript no lado do servidor (Node.js) ou a um ponto em uma rede ou uma entidade em uma estrutura de dados mais ampla. Certifique-se de considerar o contexto em que o termo é utilizado para entender seu significado específico. 3</p>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/foto3.jpg" alt="foto3" width="300">
+                    </div>
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU BRUNO MENESES.</span></h2>
+                        <P>
+                            sou iniciante
+                        </P>
+                        <p>
+                            restente do texto
+                        </p>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/bruno-meneses-nascimento/"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/bruno-brn"><button><i class="bi bi-github"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(images/Merged_document.png);">
+                        <div class="orvelay">Sistema PDV</div>
+                    </div>
+                    <div class="img-port"></div>
+                    <div class="img-port"></div>
+                </div>
+            </div>
+        </section>
     </main>
-    
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo.png" alt="logo" width="300">
+                    </div>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/bruno-meneses-nascimento/"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://github.com/bruno-brn"><button><i class="bi bi-github"></i></button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="line-footer border">
+                <p><i class="bi bi-envelope-at-fill"></i> <a href="mailto:brn.nasc19@gmail.com">brn.nasc@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
