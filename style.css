@@ -213,6 +213,7 @@ section.topo-do-site .flex{
 
 .txt-topo-site{
     padding-top: 150px;
+    text-align: center;
 }
 
 .flip-card img {
@@ -464,6 +465,7 @@ footer .line-footer p a{
 @media screen and (max-width: 1250px){
     .flex{
         flex-direction: column;
+        align-items: center;
     }
 
     h2.titulo{
@@ -496,6 +498,7 @@ footer .line-footer p a{
         width: 100%;
         height: auto;
         font-size: 38px;
+        margin: auto;
     }
 
     .topo-do-site .container img{
@@ -505,6 +508,7 @@ footer .line-footer p a{
     section.especialidades{
         padding: 80px 8%;
         height: auto;
+        margin: auto;
     }
 
     .especialidades-box {
@@ -559,4 +563,11 @@ footer .line-footer p a{
         width: 100%;
     }
 
+    .txt-topo-site{
+        margin: auto;
+        height: auto;
+
+    }
+
 }
+
