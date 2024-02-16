@@ -22,7 +22,6 @@ body{
 
 .flex{
     display: flex;
-    margin-top: 200px;
 }
 
 .btn-contato button{
@@ -198,6 +197,10 @@ section.topo-do-site .flex{
     gap: 90px;
 }
 
+.topo-do-site .flex{
+    margin-top: 200px;
+}
+
 .topo-do-site h1{
     width: 100%;
     height: auto;
@@ -308,12 +311,13 @@ section.topo-do-site .flex{
 }
 
 section.especialidades{
-    padding: 80px 4%;
+    padding: 80px 8%;
     height: 100vh;
+    margin: auto;
 }
 
 section.especialidades .flex{
-    gap: 60px;
+    gap: 30px;
     justify-content: center;
 }
 
