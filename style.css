@@ -81,7 +81,7 @@ button:hover{
 }
 
 header{
-    padding: 40px 4%;
+    padding: 40px 4% 0 4%;
     position: fixed;
     background-color:rgb(1, 1, 24) ;
     width: 100%;
@@ -311,9 +311,10 @@ section.topo-do-site .flex{
 }
 
 section.hard-skills {
-    padding: 40px 4% 80px;
-    height: auto; 
-    margin: auto; 
+    padding-top: 200px;
+    padding-bottom: 40px;
+    height: 100vh;
+    margin: auto;
 }
 
 section.hard-skills .flex {
@@ -362,9 +363,11 @@ section.hard-skills .flex {
 
 
 section.especialidades{
-    padding: 80px 4% 40px;
+    margin-top: 120px;
+    padding-top: 200px;
+    padding-bottom: 40px;
     height: 100vh;
-    margin: auto;
+    margin-bottom: auto;
 }
 
 section.especialidades .flex{
@@ -514,8 +517,10 @@ section.portfolio .flex{
 }
 
 footer{
+    display: flex;
     padding: 60px 4%;
-    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.199);
+    box-shadow: 0 0 40px 0 rgba(255, 255, 255, 0.199);
+    
 }
 
 footer .flex{
@@ -556,10 +561,6 @@ footer .line-footer p a{
         flex-direction: column-reverse;
         margin: auto;
     }
-
-    /* .topo-do-site .container{
-        margin-top: 150px;
-    } */
 
     .menu-desktop, .btn-contato{
         display: none;
@@ -665,8 +666,14 @@ footer .line-footer p a{
         margin: 0 auto;
     }
 
+    section.portfolio{
+        padding: 60px 4%;
+        height: auto;
+        box-shadow: none;
+    }
+
     section.portfolio .flex {
-        gap: 60px;
+        gap: 40px;
     }
 
     .orvelay {
@@ -689,6 +696,10 @@ footer .line-footer p a{
 
     .img-port:hover .orvelay {
         opacity: 1;
+    }
+
+    footer{
+        box-shadow: none;
     }
 
     footer .flex{
